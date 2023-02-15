@@ -1,3 +1,2 @@
 #!/bin/bash
 find . -type f /*.gif -printf '%f\n' | LC_COLLATE=C sort -f |for file in *; do echo "${file%.*}"; done
-
